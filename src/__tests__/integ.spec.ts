@@ -1,4 +1,3 @@
-import 'expect';
 import { Products } from '../product';
 import { Checkout } from '../checkout';
 import { Offers } from '../offer';
