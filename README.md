@@ -73,11 +73,4 @@ in the future with little notice.
 - The `src/__tests__/integ.spec.ts` has the full test.
 - The `src/offers/` contains the actual offer implementation.
 
-## Usage
 
-```
-yarn install
-yarn run clean
-yarn run build
-yarn run test
-```
