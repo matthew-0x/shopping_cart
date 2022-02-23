@@ -1,6 +1,5 @@
-import 'expect';
 import * as offerModule from '../offer';
-import { CheckoutItemDetailedMap } from '../checkout';
+import { CheckoutItemDetailMap } from '../checkout';
 
 
 describe('crud on offers', () => {
@@ -10,7 +9,7 @@ describe('crud on offers', () => {
     const newOffer = {
       id : 'july-offer-1',
       productTags: ['laptops', 'tree', 'treats'],
-      offerFunction: (checkout: CheckoutItemDetailedMap) => {
+      offerFunction: (checkout: CheckoutItemDetailMap) => {
         return {
           id : 'july-offer-1',
           totalPrice: 10
@@ -32,7 +31,7 @@ describe('offer application on a checkout', () => {
     const newOffer1 = {
       id : 'july-offer-1',
       productTags: ['lights', 'tree', 'treats'],
-      offerFunction: (checkout: CheckoutItemDetailedMap) => {
+      offerFunction: (checkout: CheckoutItemDetailMap) => {
         // Not caring what is in checkout and returning a static yhing for first test
         return {
           id : 'christman-offer-1',
@@ -43,7 +42,7 @@ describe('offer application on a checkout', () => {
     const newOffer2 = {
       id : 'july-offer-2',
       productTags: ['lights', 'tree', 'treats'],
-      offerFunction: (checkout: CheckoutItemDetailedMap) => {
+      offerFunction: (checkout: CheckoutItemDetailMap) => {
         // Not caring what is in checkout and returning a static yhing for first test
         return {
           id : 'christman-offer-2',
@@ -81,7 +80,7 @@ describe('offer application on a checkout', () => {
     const newOffer1 = {
       id : 'july-offer-1',
       productTags: ['treats'],
-      offerFunction: (checkout: CheckoutItemDetailedMap) => {
+      offerFunction: (checkout: CheckoutItemDetailMap) => {
         // Not caring what is in checkout and returning a static yhing for first test
         return {
           id : 'christman-offer-1',
